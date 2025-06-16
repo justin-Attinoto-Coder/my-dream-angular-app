@@ -1,0 +1,6 @@
+[
+  { "customerId": 1, "orderItems": [{ "id": 1, "productName": "Baseball", "itemCost": 9.99 }, { "id": 2, "productName": "Bat", "itemCost": 19.99 }] },
+  { "customerId": 2, "orderItems": [{ "id": 3, "productName": "Basketball", "itemCost": 7.99 }, { "id": 4, "productName": "Shoes", "itemCost": 199.99 }] },
+  { "customerId": 3, "orderItems": [{ "id": 5, "productName": "Frisbee", "itemCost": 2.99 }, { "id": 6, "productName": "Hat", "itemCost": 5.99 }] },
+  { "customerId": 4, "orderItems": [{ "id": 7, "productName": "Boomerang", "itemCost": 29.99 }, { "id": 8, "productName": "Helmet", "itemCost": 19.99 }, { "id": 9, "productName": "Kangaroo Saddle", "itemCost": 179.99 }] }
+]
