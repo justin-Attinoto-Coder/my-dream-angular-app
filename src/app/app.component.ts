@@ -6,12 +6,14 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   template: `
-    <header class="navbar fixed-top navbar-dark bg-primary">
-      <nav class="container">
-        <span class="navbar-brand">Angular Core Concepts</span>
+    <header>
+      <nav>
+        <span class="app-title">
+          <i class="fas fa-rocket mr-2"></i> Angular Core Concepts
+        </span>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <router-outlet></router-outlet>
     </main>
   `,

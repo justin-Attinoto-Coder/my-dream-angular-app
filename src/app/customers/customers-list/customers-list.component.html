@@ -1,27 +1,39 @@
-<app-filter-textbox (changed)="filter($event)"></app-filter-textbox>
-<br /><br />
-<table class="table table-hover">
+<div class="mb-6 relative">
+  <app-filter-textbox (changed)="filter($event)"></app-filter-textbox>
+</div>
+<table>
   <thead>
     <tr>
-      <th (click)="sort('name')">Name</th>
-      <th (click)="sort('city')">City</th>
-      <th (click)="sort('orderTotal')">Order Total</th>
+      <th (click)="sort('name')">
+        <i class="fas fa-user mr-2"></i> Name <i class="fas fa-sort ml-1"></i>
+      </th>
+      <th (click)="sort('city')">
+        <i class="fas fa-city mr-2"></i> City <i class="fas fa-sort ml-1"></i>
+      </th>
+      <th (click)="sort('orderTotal')">
+        <i class="fas fa-dollar-sign mr-2"></i> Order Total <i class="fas fa-sort ml-1"></i>
+      </th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let cust of filteredCustomers">
-      <td><a [routerLink]="['/orders', cust.id]">{{ cust.name | capitalize }}</a></td>
+      <td>
+        <a [routerLink]="['/orders', cust.id]">
+          <i class="fas fa-user-circle mr-2"></i> {{ cust.name | capitalize }}
+        </a>
+      </td>
       <td>{{ cust.city }}</td>
       <td>{{ cust.orderTotal | currency:currencyCode:'symbol' }}</td>
     </tr>
     <tr *ngIf="filteredCustomers && filteredCustomers.length">
       <td colspan="2"></td>
-      <td>{{ customersOrderTotal | currency:currencyCode:'symbol' }}</td>
+      <td class="font-bold">{{ customersOrderTotal | currency:currencyCode:'symbol' }}</td>
     </tr>
     <tr *ngIf="!filteredCustomers || !filteredCustomers.length">
-      <td colspan="3">No customers found</td>
+      <td colspan="3" class="text-center">No customers found</td>
     </tr>
   </tbody>
 </table>
-Number of Customers: {{ filteredCustomers.length }}
-<br />
+<p class="mt-4">
+  <i class="fas fa-info-circle mr-2"></i> Number of Customers: {{ filteredCustomers.length }}
+</p>

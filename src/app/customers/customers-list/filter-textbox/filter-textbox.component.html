@@ -1,1 +1,9 @@
-<p>filter-textbox works!</p>
+<div class="relative">
+  <i class="fa-filter"></i>
+  <input
+    type="text"
+    [(ngModel)]="filter"
+    (ngModelChange)="changed.emit(filter)"
+    placeholder="Filter customers..."
+  />
+</div>
