@@ -2,5 +2,5 @@
   "version": "0.2",
   "language": "en",
   "words": ["cust", "popperjs", "fontawesome", "fortawesome", "devkit", "bazel", "libpeerconnection", "testem"],
-  "ignorePaths": ["node_modules/**", "dist/**", "**/angular-errors.log"]
+  "ignorePaths": ["node_modules/**", "dist/**", "**/angular-errors.log", "**\\angular-errors.log"]
 }
