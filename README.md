@@ -1,6 +1,14 @@
-# MyDreamAngularApp
+# My Dream Angular App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+A modern Angular application designed to showcase best practices and up-to-date features.
+
+This project demonstrates the use of Angular's latest standalone API, providing a streamlined and modular approach to building scalable web applications. The codebase emphasizes maintainability and clarity, leveraging standalone components and modern routing techniques to simplify development. Additionally, the application structure is organized for easy extension, making it ideal for both learning and professional projects.
+
+Throughout the app, you'll find clear separation of concerns, with core and shared modules supporting reusable logic and UI elements. The routing configuration is handled in a dedicated file, allowing for straightforward navigation management and lazy loading of features. This approach not only improves performance but also enhances the developer experience by reducing boilerplate code.
+
+The user interface is crafted with a focus on responsiveness and accessibility, ensuring a seamless experience across devices. By utilizing Angular's latest features, the app remains lightweight and efficient, while still offering a robust foundation for future enhancements.
+
+The original version of this app relied on the older NgModule-based structure, which has since become less favored in modern Angular development. To bring the project up to date, I refactored the codebase to use Angular's standalone components and new routing APIs, giving the app a fresh, professional, and future-proof feel.
 
 ## Development server
 

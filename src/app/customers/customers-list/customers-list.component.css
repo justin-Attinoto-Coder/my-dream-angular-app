@@ -1,0 +1,18 @@
+table {
+  margin-top: 1.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #232946;
+  box-shadow: 0 2px 8px rgba(30,58,138,0.08);
+}
+th, td {
+  padding: 1rem;
+}
+tr:hover {
+  background: #2d3748;
+  transition: background 0.2s;
+}
+a {
+  color: #10b981;
+  font-weight: 500;
+}

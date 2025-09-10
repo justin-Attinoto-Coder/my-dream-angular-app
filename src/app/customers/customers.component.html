@@ -1,4 +1,20 @@
-<h1 class="hover:animate-hover-scale transition-all duration-300">
-  <i class="fas fa-users mr-2"></i> Customers
-</h1>
-<app-customers-list [customers]="people"></app-customers-list>
+<div class="customers-page-container">
+  <section class="hero-section" style="margin-bottom:1.5rem;">
+    <img [src]="currentHeroImage" alt="App Gallery Slideshow" class="hero-img" />
+    <div class="hero-content">
+      <h2 class="hero-title">Customer Experience Gallery</h2>
+      <p class="hero-subtitle">
+        See our app in action! Enjoy a rotating gallery of features and UI highlights.
+      </p>
+    </div>
+  </section>
+
+  <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+    <h1 class="hover:animate-hover-scale transition-all duration-300" style="margin:0;">
+      <i class="fas fa-users mr-2"></i> Customers
+    </h1>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" style="margin-left:auto;">Home</a>
+  </div>
+
+  <app-customers-list [customers]="people"></app-customers-list>
+</div>

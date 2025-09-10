@@ -76,6 +76,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a.active {
+  color: #10b981;
+  font-weight: bold;
+  text-decoration: underline;
+}
 input {
   width: 100%;
   padding: 0.5rem 1rem 0.5rem 2.5rem;
